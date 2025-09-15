@@ -4,48 +4,226 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Paul Daniel C — Portfolio</title>
-  <meta name="description" content="Paul Daniel C — Computer & Communication Engineering student portfolio website." />
+  <meta name="description" content="Portfolio — Paul Daniel C. Java, Python, AI, IoT, OCR, Radio Astronomy internships." />
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="wrap">
-    <nav class="reveal">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-      <button class="btn theme-toggle" id="themeToggle" aria-label="Toggle theme">Toggle</button>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero">Paul<span class="dot">.</span></a>
 
-    <header class="card reveal header-card">
-      <div class="avatar">P</div>
-      <div class="hdr-info">
-        <h1>Paul Daniel C <span class="meta">• B.E. CCE (2022–2026)</span></h1>
-        <p>Aspiring SDE • Java & Python • AI, IoT, Cybersecurity • CGPA: 8.89</p>
-        <div class="hdr-actions">
-          <a class="btn btn-primary" href="PAUL_DANIEL_C_resume.pdf" target="_blank">Download Resume</a>
-          <a class="btn" href="https://github.com/PAUL-DANIEL-C" target="_blank">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/paul-daniel-c-844401280" target="_blank">LinkedIn</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+          <!-- sun/moon -->
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v2M12 19v2M3 12h2M19 12h2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/></svg>
+        </button>
+      </nav>
+
+      <button class="hamburger" id="menuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <div class="hero-welcome">Hello, I’m</div>
+          <h1 class="hero-title">Paul Daniel C<span class="accent">.</span></h1>
+          <p class="hero-sub">B.E. Computer & Communication Engineering — Aspiring SDE • Java & Python • AI & Embedded • CGPA 8.89</p>
+
+          <div class="hero-ctas">
+            <a class="btn primary" href="PAUL_DANIEL_C_resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+            <a class="btn ghost" href="https://github.com/PAUL-DANIEL-C" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/paul-daniel-c-844401280" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+
+          <ul class="quick-stats">
+            <li><strong>Internships</strong><span>Infosys, NCRA-TIFR</span></li>
+            <li><strong>Projects</strong><span>ShopEase, OCR Cheque Extractor, AI Compression</span></li>
+            <li><strong>Location</strong><span>Ooty, India</span></li>
+          </ul>
+        </div>
+
+        <aside class="hero-side">
+          <div class="card profile-card">
+            <div class="avatar-wrap">
+              <img src="assets/profile.jpg" alt="Paul Daniel C" class="avatar">
+            </div>
+            <div class="card-body">
+              <h3>Paul Daniel C</h3>
+              <p class="muted">3rd Year • Computer & Communication Engineering</p>
+              <div class="skill-badges">
+                <span>Java</span><span>Python</span><span>OCR</span><span>SQL</span><span>TensorFlow</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card contact-card">
+            <div><strong>Email</strong><a href="mailto:vcmanohar5@gmail.com">vcmanohar5@gmail.com</a></div>
+            <div><strong>Phone</strong><span>+91 9047173954</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section container reveal">
+      <div class="section-head">
+        <h2>About</h2>
+        <p class="muted">Curious engineer who builds practical systems bridging AI and embedded networks.</p>
+      </div>
+      <div class="two-col">
+        <div>
+          <p>I’m a Computer & Communication Engineering student (B.E., 2022–2026) with experience in building real-world applications — from OCR cheque extraction to radio astronomy data analysis. I enjoy designing efficient algorithms and integrating ML models into edge/IoT systems.</p>
+
+          <h4>Skills & tools</h4>
+          <div class="skills-grid">
+            <div class="skill"><span class="k">Java</span><small>Advanced</small></div>
+            <div class="skill"><span class="k">Python</span><small>Advanced</small></div>
+            <div class="skill"><span class="k">SQL</span><small>Intermediate</small></div>
+            <div class="skill"><span class="k">TensorFlow</span><small>Intermediate</small></div>
+            <div class="skill"><span class="k">OCR / OpenCV</span><small>Project</small></div>
+            <div class="skill"><span class="k">Git</span><small>Daily</small></div>
+          </div>
+        </div>
+
+        <div>
+          <h4>What I build</h4>
+          <ul class="build-list">
+            <li><strong>ShopEase</strong> — Responsive e-commerce front-end (GitHub Pages).</li>
+            <li><strong>Automated Cheque Extraction</strong> — OCR pipeline & Streamlit demo (Infosys Springboard).</li>
+            <li><strong>AI Compression</strong> — Image/video compression for edge devices, evaluated with PSNR/SSIM.</li>
+            <li><strong>Radio Astronomy Tools</strong> — Data reduction & sensitivity scripts (NCRA-TIFR).</li>
+          </ul>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section>
-        <div id="about" class="card about reveal">
-          <div class="section-title"><h3>About</h3><span class="meta">Ooty, India • Born 22 Jul 2004</span></div>
-          <p>Computer Science student with strong foundations in data structures, algorithms, Java, and Python. Experienced in building real-world applications — from OCR-based cheque extraction to radio astronomy data analysis. Passionate about connecting theory to practical systems in AI, IoT and networks.</p>
+    <section id="projects" class="section alt-section reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2>Selected Projects</h2>
+          <p class="muted">Interactive demos and production-ready experiments.</p>
         </div>
-      </section>
-    </main>
 
-    <footer class="reveal">
-      <div>© Paul Daniel C — Built with ❤️ • Hosted on GitHub Pages</div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-meta">
+              <h3>ShopEase — E-commerce Frontend</h3>
+              <p class="muted">HTML • CSS • JS • GitHub Pages</p>
+            </div>
+            <p>A responsive product catalog with cart and checkout flow. Deployed on GitHub Pages with progressive enhancements for accessibility.</p>
+            <div class="proj-links">
+              <a href="https://paul-daniel-c.github.io/shopease-website/" target="_blank" rel="noopener" class="link">Live demo</a>
+              <a href="https://github.com/PAUL-DANIEL-C/shopease" target="_blank" rel="noopener" class="link">Code</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <h3>Bank Cheque Extraction</h3>
+              <p class="muted">Python • OCR • Streamlit</p>
+            </div>
+            <p>Built OCR pipelines, named-entity extraction for cheque fields, and a Streamlit UI for quick verification and export.</p>
+            <div class="proj-links">
+              <a href="#" class="link">Demo</a>
+              <a href="#" class="link">Code</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <h3>AI-Based Compression (Edge)</h3>
+              <p class="muted">Python • TensorFlow • Edge</p>
+            </div>
+            <p>Model-based compression techniques optimized for low-power devices. Evaluated using PSNR and SSIM, with practical deployment scripts.</p>
+            <div class="proj-links">
+              <a href="#" class="link">Paper</a>
+              <a href="#" class="link">Repo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section container reveal">
+      <div class="section-head">
+        <h2>Experience & Internships</h2>
+        <p class="muted">Hands-on roles and project experiences.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="ti-left">
+            <h4>Infosys Springboard — Intern</h4>
+            <p class="muted">Oct 2024 – Dec 2024</p>
+          </div>
+          <div class="ti-right">Developed a cheque extraction pipeline using OCR, implemented extraction rules and a Streamlit demo for validation and exporting results.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="ti-left">
+            <h4>NCRA-TIFR — Intern</h4>
+            <p class="muted">Jun 2024</p>
+          </div>
+          <div class="ti-right">Automated sensitivity calculations for the Ooty Radio Telescope and helped with radio astronomy data reduction and visualization.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt-section container reveal">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Let’s build something. I'm open to internships, collaborations, and full-time roles.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card card">
+          <h4>Get in touch</h4>
+          <p class="muted">Email me directly or use the quick links below.</p>
+          <div class="contact-links">
+            <a class="btn primary" href="mailto:vcmanohar5@gmail.com">Email</a>
+            <a class="btn ghost" href="https://github.com/PAUL-DANIEL-C" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/paul-daniel-c-844401280" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <form class="contact-form card" action="mailto:vcmanohar5@gmail.com" method="post" enctype="text/plain">
+          <label>
+            <span>Your name</span>
+            <input name="Name" required placeholder="Your full name" />
+          </label>
+          <label>
+            <span>Your email</span>
+            <input name="Email" type="email" required placeholder="you@example.com" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="Message" required placeholder="Tell me about your project or role..."></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send</button>
+            <button type="reset" class="btn ghost">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© Paul Daniel C — Built with ❤️ • Hosted on GitHub Pages</div>
+        <div class="muted">Replace placeholders (photo, links) and push to your repo to personalize.</div>
+      </div>
     </footer>
-  </div>
+  </main>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
